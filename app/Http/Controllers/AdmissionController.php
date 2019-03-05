@@ -26,7 +26,7 @@ class AdmissionController extends Controller
 
       $message = 'Complimenti, inserito con successo';
 
-      Mail::to('amedeopro@me.com')->send(new SendNewLead());
+      Mail::to('amedeopro@me.com')->send(new SendNewLead($newLead));
 
       return view('admission.index', compact('message'));
     }
