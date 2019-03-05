@@ -31,6 +31,6 @@ class SendNewLead extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.lead_mail');
+        return $this->from('esercizio.laravel@amedeopro.it')->view('mail.lead_mail');
     }
 }
